@@ -37,7 +37,7 @@ app.get('/api/todos', async (req: Request, res: Response) => {
 
   const done = rows
     .filter((todo) => todo.done)
-    .sort((a, b) => b.completed_at.localeCompare(a.completed_at))
+    .sort((a, b) => (new Date(b.completed_at) as any) - (new Date(a.completed_at) as any))
     .slice(0, doneLimit)
     .sort((a, b) => a.value.localeCompare(b.value));
 
