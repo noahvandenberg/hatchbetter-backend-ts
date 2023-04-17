@@ -2,6 +2,9 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import pool from './db';
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 interface Todo {
   id: number;
@@ -11,7 +14,7 @@ interface Todo {
 }
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
