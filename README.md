@@ -2,6 +2,10 @@
 
 The Backend is a Node.js API server for the Marvelous 2.0 Todo application. It provides the necessary API endpoints for managing tasks and supports search functionality. The backend is built using TypeScript, Express, and PostgreSQL.
 
+This project is deployed on Vercel. You can visit the live application at [https://hatch.noahvandenberg.com](https://hatch.noahvandenberg.com).
+
+For the backend API server, please visit the [Hatch Better Full Stack Assessment Backend Repository](https://github.com/noahvandenberg/hatchbetter-backend-ts).
+
 ## Features
 
 - CRUD operations on tasks
